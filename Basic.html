@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Basic.css">
+</head>
+<body>
+    <div class="navber">
+        <div class="logo-section">
+            <img src="cake logo.avif" alt="">
+            <span>Tamima's Dessert</span>
+        </div>
+   
+        <nav>
+         <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="navlink" onclick="toggleDropdown(event)">Blogs</a>
+              <ul class="dropdown-menu">
+                <li><a href="blogs.html">Web Development</a></li>
+                <li><a href="DM.html">Digital Marketing</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      <script>
+        function toggleDropdown(event) {
+          event.preventDefault();
+
+          const dropdown = event.target.closest('.dropdown');
+          dropdown.classList.toggle('active');
+
+          // Close other dropdowns
+         document.querySelectorAll('.dropdown').forEach((el) => {
+            if (el !== dropdown) el.classList.remove('active');
+          });
+       }
+
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown').forEach(el => el.classList.remove('active'));
+          }
+        });
+      </script>
+        
+    </div> <br><br><br><br>
+
+  <section class="about">
+    <div class="about-container">
+        <img src="of1.png" alt="Logo" class="about-logo">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p><strong>Hello! I'm Tamima</strong>, a passionate <span class="highlight">web developer</span>. I create responsive and user-friendly websites with modern technologies.</p>
+        </div>
+    </div>
+  </section> <br> <br><br>
+
+<div class="content-wrapper">
+  <!-- Left side: Blogs -->
+<div class="section">
+  <h2>Blogs</h2>
+  <div class="grid-container">
+    <!-- Box 1 -->
+    <div class="box">
+      <img src="SEO.jpg" alt="Vanilla Cake">
+      <div class="text">
+        <h3>SEO Marketing</h3>
+        <p>SEO marketing boosts website visibility on search engines by optimizing content and structure, helping attract organic traffic, improve rankings, and grow business effectivp>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="box ">
+      <div class="text">
+        <h3>E-commerce Marketing</h3>
+        <p>E-commerce marketing focuses on driving online sales through strategies like SEO, social media, email campaigns, and targeted advertising to attract customers.</p>
+      </div>
+      <img src="image 1.webp" alt="Kacha Golla">
+    </div>
+
+    <!-- Box 3 -->
+    <div class="box">
+      <img src="DM.jpg" alt="Chocolate Cake">
+      <div class="text">
+        <h3>Digital Marketing</h3>
+        <p>Digital marketing uses online platforms like social media, SEO, and email to promote products, engage customers, and drive sales.</p>
+      </div>
+    </div>
+
+     <div class="box">
+      <div class="text">
+        <h3>Web Development</h3>
+        <p>Web development involves creating dynamic websites using front-end technologies, back-end integration, and modern frameworks to deliver functional, user-friendly experiences.</p>
+      </div>
+      <img src="WDM.webp" alt="Web Dev">
+    </div>
+  </div>
+</div>
+
+  <!-- Box 4 -->
+
+<div class="section">
+  <h2>Projects</h2>
+  <div class="grid-container">
+    <!-- Box 5 -->
+    <div class="box">
+      <img src="health.jpg" alt="Medical Website">
+      <div class="text">
+        <h3>Medical Website</h3>
+        <p>ChatGPT said:
+A medical website provides  health information, online , appointment bookings, and accessible resources for professionals.</p>
+      </div>
+      <a href="#" class="visit-now">Visite Now</a>
+    </div>
+
+    <!-- Box 6 -->
+    <div class="box">
+      <div class="text">
+        <h3>Clothing E-commerce</h3>
+        <p>A clothing e-commerce website offers a seamless shopping experience, featuring product browsing, secure payments, and easy returns for customers.</p>
+      </div>
+      <img src="clothing.jpg" alt="Clothing Site">
+      <a href="#" class="visit-now">Visite Now</a>
+    </div>
+
+    <!-- Box 7 -->
+    <div class="box">
+      <img src="yi.png" alt="YouTube Interface">
+      <div class="text">
+        <h3>YouTube Interface</h3>
+        <p>A YouTube interface clone mimics the video platform's design, offering features like search, video previews, and responsive layout.</p>
+      </div>
+      <a href="#" class="visit-now">Visite Now</a>
+    </div>
+
+    <!-- Box 8 -->
+    <div class="box ">
+      <div class="text">
+        <h3>Spoken English</h3>
+        <p>Spoken English focuses on improving verbal communication skills, helping individuals speak confidently and fluently in everyday conversations.</p>
+      </div>
+      <img src="SE.png" alt="Orange Cake">
+      <a href="#" class="visit-now">Visite Now</a>
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Customer Care</h3>
+            <ul>
+                <li><a href="hc.html">Help Center</a></li>
+                <li><a href="hto">How to Order</a></li>
+                <li><a href="to.html">Track Order</a></li>
+                <li><a href="pp.html">Privacy Policy</a></li>
+                <li><a href="order.html">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Our Partners</h3>
+            <ul>
+                <li><a href="#">Delivery Tiger</a></li>
+                <li><a href="#">Delivery Friend</a></li>
+                <li><a href="#">Classified Site</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Payment Methods</h3>
+            <div class="payment-methods">
+                <img src="MC.png" alt="MasterCard">
+                <img src="Visa_.png" alt="Visa">
+                <img src="bkash.png" alt="bkash">
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get updates on new products.</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email"> <br> <br>
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@Tamimadessert-123"><img src="youtube-icon-free-vector.jpg" width="25"></a>
+                <a href="https://www.pinterest.com/business/hub/"><img src="pinterest.png" width="25"></a>
+                <a href="https://www.facebook.com/tamimadessert"><img src="fb.png" width="25"></a>
+                <a href="https://www.instagram.com/tamima_mimm/"><img src="ins icon.png" width="25"></a>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
